@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leaklens-local"
+version = "1.0.0"
+description = "Offline redacted secret scanning with review baselines and local reports"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "IFTIKHAR"}]
+dependencies = []
+
+[project.scripts]
+leaklens = "leaklens.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["leaklens*"]
+
+[project.urls]
+Repository = "https://github.com/specter-sec/leaklens"
+Issues = "https://github.com/specter-sec/leaklens/issues"
